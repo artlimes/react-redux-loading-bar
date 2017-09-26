@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = require('react-redux');
+var _reactReduxMeteor = require('react-redux-meteor');
 
 var _loading_bar = require('./loading_bar');
 
@@ -14,4 +14,4 @@ var mapImmutableStateToProps = function mapImmutableStateToProps(state) {
   };
 };
 
-exports.default = (0, _reactRedux.connect)(mapImmutableStateToProps)(_loading_bar.LoadingBar);
+exports.default = (0, _reactReduxMeteor.connect)(null, mapImmutableStateToProps)(_loading_bar.LoadingBar);
