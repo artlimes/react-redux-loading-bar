@@ -5,7 +5,7 @@ import {
   object,
   string,
 } from 'prop-types'
-import { connect } from 'react-redux'
+import { connect } from 'react-redux-meteor'
 
 export const UPDATE_TIME = 200
 export const MAX_PROGRESS = 99
@@ -209,4 +209,4 @@ const mapStateToProps = state => ({
   loading: state.loadingBar,
 })
 
-export default connect(mapStateToProps)(LoadingBar)
+export default connect(null, mapStateToProps)(LoadingBar)

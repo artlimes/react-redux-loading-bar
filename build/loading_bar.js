@@ -15,7 +15,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _propTypes = require('prop-types');
 
-var _reactRedux = require('react-redux');
+var _reactReduxMeteor = require('react-redux-meteor');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -182,10 +182,9 @@ var LoadingBar = exports.LoadingBar = function (_React$Component) {
         transition: 'transform ' + animationTime + 'ms linear',
         width: '100%',
         willChange: 'transform, opacity'
-      };
 
-      // Use default styling if there's no CSS class applied
-      if (!this.props.className) {
+        // Use default styling if there's no CSS class applied
+      };if (!this.props.className) {
         style.height = '3px';
         style.backgroundColor = 'red';
         style.position = 'absolute';
@@ -247,4 +246,4 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps)(LoadingBar);
+exports.default = (0, _reactReduxMeteor.connect)(null, mapStateToProps)(LoadingBar);
