@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-loading-bar",
+  "name": "react-redux-meteor-loading-bar",
   "version": "2.9.2",
   "description": "Simple Loading Bar for Redux and React",
   "main": "build/index.js",
